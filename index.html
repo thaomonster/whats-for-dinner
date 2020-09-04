@@ -9,19 +9,22 @@
   <body>
     <header>
       <h1> What's for Dinner?</h1>
-      <button class="add-recipe-button">Add A Recipe</button>
+      <button class="add-recipe-button">ADD A RECIPE</button>
     </header>
     <main class="wrapper">
-        <article class="box" >
-          <h2>What are you looking for?<span style="color: red">*</span></h2>
-            <li><button class="list-button"></button>Side</li>
-            <li><button class="list-button"></button>Main Dish</li>
-            <li><button class="list-button"></button>Dessert</li>
-            <li><button class="list-button"></button>Entire Meal</li>
-          <button class="cook-button">LET'S COOK!</button>
-        </article>
+      <article class="box" >
+        <h2>What are you looking for?<span style="color: red">*</span></h2>
+        <div class="checkbox-container">
+          <li><input type="radio" name="type of meal" value="side" class="list"/>Side</li>
+          <li><input type="radio" name="type of meal" value="main dish" class="list"/>Main Dish</li>
+          <li><input type="radio" name="type of meal" value="dessert" class="list"/>Dessert</li>
+          <li><input type="radio" name="type of meal" value="entire meal" class="list"/>Entire Meal</li>
+        </div>
+        <button class="cook-button">LET'S COOK!</button>
+      </article>
       <article class="box">
-        <img src='./assets/cookpot.svg' alt='cooking pot'>
+        <img  class="cooking-pot" src='./assets/cookpot.svg' alt='cooking pot'>
+        <button class="clear-button">CLEAR</button>
       </article>
     </main>
   </body>

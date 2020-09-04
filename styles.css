@@ -16,50 +16,79 @@ header {
   display: flex;
   justify-content: space-between;
   height: 30px;
-  padding: 10px;
+  padding: 14px;
   background-color: #0fb9b1;
 }
 
 h1 {
-  font-size: 1.4em;
+  font-size: 18pt;
+  font-family: 'Roboto';
   margin: 0%
 }
 
  .wrapper {
    display: flex;
-   flex-direction: row;
    padding: 20px;
    margin: 30px;
    justify-content: space-around;
  }
 
 .box {
- display: flex;
- flex-direction: column;
- float: left;
  background-color: rgba(225, 225, 225, .9);
- height: 400px;
- width: 500px;
+ height: 346px;
+ width: 450px;
 }
 
-.box:nth-child(1) {
-  justify-content: space-around;
-  list-style-type: none;
+h2 {
+  margin: 45px;
+  height: 1px;
+  font-size: 19pt;
+  font-family: 'Roboto'
 }
 
 .add-recipe-button {
-  border-radius: 4px
+  border: white;
+  border-radius: 5px;
 }
 
 .cook-button {
   background-color: #0fb9b1;
-  width: 150px;
+  width: 180px;
+  border: white;
   border-radius: 4px;
   margin: 10px;
-  padding: 10px
+  padding: 10px;
+  margin-left: 45px;
 }
 
-.list-button {
-  height: 15px;
-  width: 15px;
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 30px;
+  margin-block-end: 2px;
+}
+
+li {
+  margin: 10px;
+  font-size: 15pt;
+}
+
+img.cooking-pot {
+  display: flex;
+  margin-top: 115px;
+  margin-left: 159px;
+  width: 150px;
+  height: 150px;
+}
+
+.clear-button {
+  background-color: #95a5a6;
+  border: white;
+  border-radius: 5px;
+  width: 65px;
+  height: 27px;
+  color: white;
+  margin-left: 365px;
+  margin-top: 34px;
 }
