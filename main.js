@@ -34,8 +34,15 @@ function showResult() {
 };
 
 function getEntireMeal() {
-  console.log('meal')
-  
+  var sidesIndex = getRandomIndex(meals.sides)
+  var entreesIndex = getRandomIndex(meals.entrees)
+  var dessertsIndex = getRandomIndex(meals.desserts)
+
+  meals.sides[sidesIndex]
+  meals.entrees[entreesIndex]
+  meals.desserts[dessertsIndex]
+
+
   showResult();
 };
 
