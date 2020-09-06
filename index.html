@@ -15,19 +15,22 @@
       <article class="box" >
         <h2>What are you looking for?<span style="color: red">*</span></h2>
         <div class="checkbox-container">
-          <li><input type="radio" name="type of meal" value="side" class="list"/>Side</li>
-          <li><input type="radio" name="type of meal" value="main dish" class="list"/>Main Dish</li>
-          <li><input type="radio" name="type of meal" value="dessert" class="list"/>Dessert</li>
-          <li><input type="radio" name="type of meal" value="entire meal" class="list"/>Entire Meal</li>
+          <li><input type="radio" name="type-of-meal" value="sides" class="radio-button" />Side</li>
+          <li><input type="radio" name="type-of-meal" value="entrees" class="radio-button"/>Main Dish</li>
+          <li><input type="radio" name="type-of-meal" value="desserts" class="radio-button"/>Dessert</li>
+          <li><input type="radio" name="type-of-meal" value="meals" class="radio-button"/>Entire Meal</li>
         </div>
         <button class="cook-button">LET'S COOK!</button>
       </article>
       <article class="box">
-        <img  class="cooking-pot" src='./assets/cookpot.svg' alt='cooking pot'>
-        <button class="clear-button">CLEAR</button>
+        <img  class="view cooking-pot" src='./assets/cookpot.svg' alt="cooking pot">
+        <div class="view result-container hidden">
+          <h3>You should make:</h3>
+        </div>
+        <button class="view clear-button hidden">CLEAR</button>
       </article>
     </main>
   </body>
+  <script src="./data.js"></script>
   <script type="text/javascript" src="main.js"></script>
-  <script src="data.js"></script>
 </html>
