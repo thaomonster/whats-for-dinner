@@ -46,6 +46,17 @@ h2 {
   border-radius: 5px;
 }
 
+.checkbox-container {
+  list-style-type: none;
+  margin: 20px;
+}
+
+
+li {
+  margin: 20px;
+  font-size: 15pt;
+}
+
 .cook-button {
   background-color: #0fb9b1;
   width: 197px;
@@ -53,16 +64,6 @@ h2 {
   border-radius: 4px;
   padding: 10px;
   margin-left: 45px;
-}
-
-.checkbox-container {
-  list-style-type: none;
-  margin: 20px;
-}
-
-li {
-  margin: 20px;
-  font-size: 15pt;
 }
 
 img {
@@ -73,16 +74,16 @@ img {
   height: 160px;
 }
 
+.result-container {
+  margin: 175px 0 135px 0 ;
+  text-align: center;
+}
+
 h3 {
   font-style: italic;
   font-size: medium;
   font-weight: normal;
   margin: 0%;
-}
-
-.result-container {
-  margin: 175px 0 135px 0 ;
-  text-align: center;
 }
 
 .selected-dish {
@@ -94,7 +95,6 @@ h3 {
   text-align: center;
   margin: 125px 30px 105px 30px;
 }
-
 
 .full-course {
   font-size: 20pt;
@@ -109,4 +109,26 @@ h3 {
   color: white;
   margin-left: 405px;
   position: absolute;
+}
+
+form {
+  text-align: left;
+  font-family: 'Roboto';
+  padding: 22px;
+  margin-top: 135px;
+  background-color: rgba(225, 225, 225, .9);
+}
+
+.input-field {
+  height: 26px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.add-new-button {
+  font-family: 'Roboto';
+  background-color: #0fb9b1;
+  border: white;
+  border-radius: 5px;
+  padding: 8px;
 }
