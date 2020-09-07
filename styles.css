@@ -1,7 +1,7 @@
 body {
   background-image: url(./assets/burger-friends.jpg);
   background-size: cover;
-  margin: 0%
+  margin: 0%;
 }
 
 .hidden {
@@ -11,7 +11,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 30px;
   padding: 14px;
   background-color: #0fb9b1;
 }
@@ -19,28 +18,27 @@ header {
 h1 {
   font-size: 18pt;
   font-family: 'Roboto';
-  margin: 0%
+  margin: 2px;
 }
 
  .wrapper {
-   display: flex;
-   padding: 25px;
-   margin: 32px;
-   justify-content: space-around;
- }
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  margin: 32px;
+}
 
 .box {
- background-color: rgba(225, 225, 225, .9);
- height: 410px;
- width: 495px;
- font-family: 'Roboto';
+  background-color: rgba(225, 225, 225, .9);
+  height: 413px;
+  width: 493px;
+  font-family: 'Roboto';
 }
 
 h2 {
-  margin-top: 74px;
-  margin-left: 58px;
-  height: 1px;
-  font-size: 19pt;
+  margin-left: 42px;
+  padding-top: 45px;
+  font-size: 20pt;
 }
 
 .add-recipe-button {
@@ -48,56 +46,58 @@ h2 {
   border-radius: 5px;
 }
 
+.checkbox-container {
+  list-style-type: none;
+  margin: 20px;
+}
+
+
+li {
+  margin: 20px;
+  font-size: 15pt;
+}
+
 .cook-button {
   background-color: #0fb9b1;
   width: 197px;
   border: white;
   border-radius: 4px;
-  margin: -7px;
   padding: 10px;
-  margin-left: 59px;
+  margin-left: 45px;
 }
 
-.checkbox-container {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 30px;
-  margin-block-end: 2px;
-  padding: 16px;
-}
-
-li {
-  margin: 10px;
-  font-size: 15pt;
-}
-
-
-img.cooking-pot {
+img {
+  display: block;
+  margin: auto;
   margin-top: 132px;
-  margin-left: 166px;
   width: 160px;
   height: 160px;
 }
 
 .result-container {
-  font-size: 23pt;
-  padding: 71px;
-  margin-top: 80px;
+  margin: 175px 0 135px 0 ;
+  text-align: center;
 }
 
 h3 {
-  display: flex;
-  justify-content: center;
   font-style: italic;
   font-size: medium;
   font-weight: normal;
-  margin-block-end: 0;
+  margin: 0%;
 }
 
 .selected-dish {
-  display: flex;
-  justify-content: center;
+  font-size: 23pt;
+  margin: 0%;
+}
+
+.entire-meal {
+  text-align: center;
+  margin: 125px 30px 105px 30px;
+}
+
+.full-course {
+  font-size: 20pt;
 }
 
 .clear-button {
@@ -107,6 +107,28 @@ h3 {
   width: 65px;
   height: 27px;
   color: white;
-  margin-left: 396px;
-  margin-top: 69px;
+  margin-left: 405px;
+  position: absolute;
+}
+
+form {
+  text-align: left;
+  font-family: 'Roboto';
+  padding: 22px;
+  margin-top: 135px;
+  background-color: rgba(225, 225, 225, .9);
+}
+
+.input-field {
+  height: 26px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.add-new-button {
+  font-family: 'Roboto';
+  background-color: #0fb9b1;
+  border: white;
+  border-radius: 5px;
+  padding: 8px;
 }
