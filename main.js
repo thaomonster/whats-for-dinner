@@ -3,13 +3,20 @@ var letsCookBtn = document.querySelector('.cook-button');
 var clearBtn = document.querySelector('.clear-button');
 var resultPage = document.querySelector('.result-container');
 var cookPotImg = document.querySelector('.cooking-pot');
+var prompt = document.querySelector('.prompt')
 
 letsCookBtn.addEventListener('click', populateMeal);
 
 function getRandomDishes(str) {
   var randomIndex = getRandomIndex(meals[str]);
   var randomDish = meals[str][randomIndex];
-  resultPage.insertAdjacentHTML('beforeend', `<span class="selected-dish">${randomDish}</span>`)
+
+  resultPage.outerHTML =
+  `<div class="result-container">
+    <h3>You should make:</h3>
+    <p class="selected-dish">${randomDish}</p>
+  </div>`
+
   showResult();
 };
 
@@ -38,10 +45,15 @@ function getEntireMeal() {
   var entreesIndex = getRandomIndex(meals.entrees)
   var dessertsIndex = getRandomIndex(meals.desserts)
 
-  meals.sides[sidesIndex]
-  meals.entrees[entreesIndex]
-  meals.desserts[dessertsIndex]
+  var sides = meals.sides[sidesIndex]
+  var entrees = meals.entrees[entreesIndex]
+  var desserts = meals.desserts[dessertsIndex]
 
+  resultPage.outerHTML =
+  `<div class="entire-meal">
+      <h3>You should make:</h3>
+      <p class="full-course"> ${entrees} with a side of ${sides} and ${desserts} for dessert!</p>
+  </div>`
 
   showResult();
 };
@@ -54,9 +66,3 @@ function populateMeal() {
     getRandomDishes(checked)
   }
 };
-
-//make a new function for addEventListener that contains the function getRandomDishes and getEntireMeal
-//create a getEntireMeal function
-  //need to access our sides, entrees, desserts array
-  //need to randomize all three arrays together and create
-//insertAdjacentHTML onto the result page and hide pot image
